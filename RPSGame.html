@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rock-Paper-Scissors</title>
+    <link rel="stylesheet" type="text/css" href="CSS/RPSGame.css">
+    
+</head>
+<body>
+    <header>
+        <div class="toptext">
+            <h1>Rock-Paper-Scissors</h1>
+        </div>
+    </header>
+
+    <div class="center">
+        <div class="playerShow">
+            <p>Your Points:</p>
+            <p class="playerPoints">0</p>
+            <div class="playerDiv">
+                <input type="image" src="images/rock.png" class="rock" width="100px"><br>
+                <input type="image" src="images/paper.png" class="paper" width="100px" /><br>
+                <input type="image" src="images/scissors.png" class="scissors" width="100px" /><br>
+                <p>Choose your weapon!</p>
+            </div>
+        </div>
+
+        
+
+        <div class="computerShow">
+            <p>Computer Points:</p>
+            <p class="computerPoints">0</p>
+            <img  src="images/rock.png"  width="100px"><br>
+            <img  src="images/paper.png"  width="100px"><br>
+            <img  src="images/scissors.png"  width="100px"><br>
+            <br><p>Computer Weapon</p>
+        </div>
+    </div>
+
+    <div id="playroundShow">
+        <div class="weapon">
+            <img id="PlayerWeapon" src="images/question.png" alt="Player Weapon" width="150px" id="playerWeapon">
+            <img id="ComputerWeapon" src="images/question.png" alt="Computer Weapon" width="150px" id="computerWeapon"> 
+        </div>
+        <p class="youchose"></p>
+        <p class="computerchose"></p>
+        <p class="roundErgebnis"></p>
+        <h1 class="winner"></h1>
+    </div>
+    <script  src="JS/RPSGame.js"></script>
+</body>
+</html>
