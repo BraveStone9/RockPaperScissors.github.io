@@ -1,0 +1,71 @@
+body {
+    background-color: rgb(4, 11, 23);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+header {
+    border-bottom: 2px solid white;
+    padding-bottom: 10px;
+}
+
+.center {
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: 0 20px 0 20px;
+}
+
+#playroundShow {
+    text-align: center;
+}
+
+p {
+    font-size: large;
+    color: aliceblue;
+}
+.playerShow{
+    overflow: hidden;
+    float: left;
+    left: 15px;   
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+    margin: 1px;
+    /* background-color:rgb(3, 21, 59); */
+}
+
+
+.computerShow{
+    overflow: hidden;
+    float: right;
+    right: 15px;
+    position: absolute;
+    margin: 1px;
+    justify-content: center;
+    text-align: center;
+    /* background-color: rgb(3, 21, 59); */
+}
+.computerPoints,
+.playerPoints {
+    font-size: 30px;
+}
+
+.weapon{
+    padding-top: 100px;
+    margin: 10px;
+}
+
+.playAgain {
+    padding: 20px;
+    font-size: 15px;
+    background: #fbe901;
+    border: none;
+    color: #083517;
+    border-radius: 5px;
+}
