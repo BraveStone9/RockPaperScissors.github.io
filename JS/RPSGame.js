@@ -48,7 +48,7 @@ function computerPlay() {
 //chooses images of the selected weapons for computer and player
 function weapons(playerSelection, computerSelection){
 
-    console.log("$$$$$$$$",computerSelection);
+    console.log("$$$$$$$$" + computerSelection);
     switch(playerSelection){
         case "rock":
             document.getElementById("PlayerWeapon").src = "images/rock.png";
@@ -60,6 +60,10 @@ function weapons(playerSelection, computerSelection){
                 console.log("2");
                 document.getElementById("ComputerWeapon").src = "images/paper.png";
                 }
+            else if (computerSelection === "rock") {
+                console.log("3");
+                document.getElementById("ComputerWeapon").src = "images/rock.png";
+                }
             break;
         case "scissors":
             document.getElementById("PlayerWeapon").src = "images/scissors.png";
@@ -69,6 +73,10 @@ function weapons(playerSelection, computerSelection){
             else if (computerSelection === "rock") {
                 document.getElementById("ComputerWeapon").src = "images/rock.png";
                }
+            else if (computerSelection === "scissors") {
+                console.log("1");
+                document.getElementById("ComputerWeapon").src = "images/scissors.png";
+            }
            break;
         case "paper":
             document.getElementById("PlayerWeapon").src = "images/paper.png";
@@ -77,6 +85,10 @@ function weapons(playerSelection, computerSelection){
             }
             else if (computerSelection === "scissors") {
                 document.getElementById("ComputerWeapon").src = "images/scissors.png";
+            }
+            else if (computerSelection === "paper") {
+            console.log("2");
+            document.getElementById("ComputerWeapon").src = "images/paper.png";
             }
             break;
 
