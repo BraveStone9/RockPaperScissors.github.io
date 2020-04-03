@@ -43,11 +43,11 @@ function playerSelectedWeapon(playerInput) {
 
 //choose random function for the computer
 function computerPlay() {
-   var computerChoice = plays[Math.floor(Math.random() * 3)]
+    var computerChoice = plays[Math.floor(Math.random() * 3)]
     console.log("@@@@" + computerChoice)
     return computerChoice;
 }
-//chooses images of the selected weapons for computer and player
+
 function weapons(playerSelection, computerSelection){
 
     console.log("$$$$$$$$" + computerSelection);
