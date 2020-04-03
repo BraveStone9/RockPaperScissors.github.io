@@ -45,7 +45,7 @@ function computerPlay() {
     console.log(plays[Math.floor(Math.random() * 3)])
     return plays[Math.floor(Math.random() * 3)];
 }
-
+//chooses images of the selected weapons for computer and player
 function weapons(playerSelection, computerSelection){
 
     console.log("$$$$$$$$",computerSelection);
