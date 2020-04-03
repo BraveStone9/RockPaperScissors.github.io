@@ -12,7 +12,7 @@ let winner = "";
 //get the input of the player   
 let playerSelection = "";
 //get random input for the computer
-const computerSelection = computerPlay();
+let computerSelection = "";
 
 
 let playerPointsText = document.querySelector(".playerPoints");
@@ -36,8 +36,9 @@ paperImg.addEventListener("click", () => playerSelectedWeapon("paper"));
 //player selected weapon
 function playerSelectedWeapon(playerInput) {
     playerSelection = playerInput;
-    weapons(playerSelection, computerPlay())
-    playRound(playerSelection, computerPlay());
+    computerSelection = computerPlay();
+    weapons(playerSelection, computerSelection)
+    playRound(playerSelection, computerSelection);
 }
 
 //choose random function for the computer
