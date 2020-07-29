@@ -105,7 +105,7 @@ function playRound(playerSelection, computerSelection) {
     console.log("player chose: " + playerSelection + " computer chose: " + computerSelection);
     youchoseText.textContent = "You Chose: " + playerSelection;
     computerchoseText.textContent = "The Computer Chose: " + computerSelection;
-    // your code here!
+ 
     switch (playerSelection) {
         case "rock":
             if (computerSelection === "scissors") {
