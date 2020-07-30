@@ -19,7 +19,7 @@ let playerPointsText = document.querySelector(".playerPoints");
 let computerPointsText = document.querySelector(".computerPoints");
 let youchoseText = document.querySelector(".youchose");
 let computerchoseText = document.querySelector(".computerchose");
-let roundErgebnisText = document.querySelector(".roundErgebnis");
+let roundResultText = document.querySelector(".roundResult");
 let winnerText = document.querySelector(".winner");
 
 ///eventlisteners for button clicks (choosing rock paper or scissors)
@@ -110,38 +110,38 @@ function playRound(playerSelection, computerSelection) {
         case "rock":
             if (computerSelection === "scissors") {
                 playerPoints++;
-                roundErgebnisText.textContent = "Player gets a point!";
+                roundResultText.textContent = "Player gets a point!";
             }
             else if (computerSelection === "paper") {
                 computerPoints++;
-                roundErgebnisText.textContent = "Computer gets a point!";
+                roundResultText.textContent = "Computer gets a point!";
             }
             else
-                roundErgebnisText.textContent = "Its a Tie";
+                roundResultText.textContent = "Its a Tie";
             break;
         case "scissors":
             if (computerSelection === "paper") {
                 playerPoints++;
-                roundErgebnisText.textContent = "Player gets a point!";
+                roundResultText.textContent = "Player gets a point!";
             }
             else if (computerSelection === "rock") {
                 computerPoints++;
-                roundErgebnisText.textContent = "Computer gets a point!";
+                roundResultText.textContent = "Computer gets a point!";
             }
             else
-                roundErgebnisText.textContent = "Its a Tie";
+                roundResultText.textContent = "Its a Tie";
             break;
         case "paper":
             if (computerSelection === "rock") {
                 playerPoints++;
-                roundErgebnisText.textContent = "Player gets a point!";
+                roundResultText.textContent = "Player gets a point!";
             }
             else if (computerSelection === "scissors") {
-                roundErgebnisText.textContent = "Computer gets a point!";
+                roundResultText.textContent = "Computer gets a point!";
                 computerPoints++;
             }
             else
-                roundErgebnisText.textContent = "Its a Tie";
+                roundResultTextt.textContent = "Its a Tie";
             break;
 
     }
