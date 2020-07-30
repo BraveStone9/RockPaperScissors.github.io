@@ -141,7 +141,7 @@ function playRound(playerSelection, computerSelection) {
                 computerPoints++;
             }
             else
-                roundResultTextt.textContent = "Its a Tie";
+                roundResultText.textContent = "Its a Tie";
             break;
 
     }
